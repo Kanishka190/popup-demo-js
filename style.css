@@ -1,0 +1,31 @@
+.bg {
+     background-color: rgba(225, 170, 227, 0.647);
+     width: 100vw;
+     height: 100vh;
+}
+.demo {
+    position: absolute;
+    left: 650px;
+}
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    left: 700px;
+    top: 80px;
+}
+
+[popover] {
+    display: none; 
+    position: absolute;
+    background-color: rgb(127, 181, 172);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
