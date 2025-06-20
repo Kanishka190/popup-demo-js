@@ -1,31 +1,88 @@
-.bg {
-     background-color: rgba(225, 170, 227, 0.647);
-     width: 100vw;
-     height: 100vh;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f8fc;
+    margin: 0;
+    padding: 0;
 }
-.demo {
-    position: absolute;
-    left: 650px;
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
 }
-button {
-    padding: 10px 15px;
+
+.demo h1 {
+    color: #2c3e50;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.about-btn {
+    padding: 12px 25px;
     background-color: #007BFF;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
+    font-size: 16px;
     cursor: pointer;
-    position: absolute;
-    left: 700px;
-    top: 80px;
+    transition: background-color 0.3s ease;
+}
+
+.about-btn:hover {
+    background-color: #0056b3;
 }
 
 [popover] {
-    display: none; 
+    display: none;
     position: absolute;
-    background-color: rgb(127, 181, 172);
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 500px;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    width: 320px;
+    text-align: left;
+}
+
+[popover] h2, [popover] h3 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+[popover] p {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+.contact-list li {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.contact-list a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
 }
